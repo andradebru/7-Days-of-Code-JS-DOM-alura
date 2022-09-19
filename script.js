@@ -8,11 +8,11 @@ function imprimirSalvar() {
 }
 
 function validateForm() {
-  let nome = document.formCadastro.name.value.length;
-  if (nome > 3 && nome < 120) {
+  let comprimentoNome = document.formCadastro.name.value.length;
+  if (comprimentoNome >= 3 && comprimentoNome <= 120) {
     console.log("nome valido");
   } else {
-    console.log("nome invalido");
+    alert("nome invalido");
   }
 }
 
