@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
+    <title>Novo Cadastro</title>
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -22,33 +22,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <h1>Cadastro</h1>
-    <form class="form js-form">
-      <label for="name">
-        Nome
-        <input
-          type="text"
-          class="form-field js-field"
-          id="name"
-          maxlength="120"
-          name="name"
-          required
-        />
-      </label>
-      <label for="birth-date">
-        Data de Nascimento
-        <input
-          type="date"
-          class="form-field js-field"
-          id="birth-date"
-          name="birth-date"
-          required
-        />
-      </label>
-      <button type="submit" id="myBtn">Salvar</button>
-    </form>
-    <script src="script.js"></script>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <fieldset>
+      <legend>Novo Cadastro</legend>
+      <form name="formCadastro" class="form js-form">
+        <label for="name">
+          <!-- document.formCadastro.name.value -->
+          Nome
+          <input
+            type="text"
+            class="form-field js-field"
+            id="name"
+            minlength="5"
+            maxlength="120"
+            name="name"
+            required
+          />
+        </label>
+        <label for="birth-date">
+          Data de Nascimento
+          <input
+            type="date"
+            class="form-field js-field"
+            id="birth-date"
+            name="birth-date"
+            required
+          />
+        </label>
+        <button type="submit" id="myBtn">Salvar</button>
+      </form>
+      <script src="script.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </fieldset>
   </body>
 </html>
