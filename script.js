@@ -1,5 +1,7 @@
-const element = document.getElementById("myBtn");
-element.addEventListener("click", validateForm, imprimirSalvar);
+const btnSalvarTabela = document.getElementById("myBtn");
+btnSalvarTabela.addEventListener("click", imprimirSalvar);
+btnSalvarTabela.addEventListener("click", validateForm);
+btnSalvarTabela.addEventListener("click", addDadosEmTabela);
 
 function imprimirSalvar() {
   // console.log("Botão salvar clicado");
@@ -16,12 +18,22 @@ function validateForm() {
   }
 }
 
-function allLetter(inputtxt) {
-  var letters = /^[A-Za-z]+$/;
-  if (inputtxt.value.match(letters)) {
-    return true;
-  } else {
-    alert("message");
-    return false;
-  }
+// function allLetter(inputtxt) {
+//   var letters = /^[A-Za-z]+$/;
+//   if (inputtxt.value.match(letters)) {
+//     return true;
+//   } else {
+//     alert("message");
+//     return false;
+//   }
+// }
+
+// const btnSalvarTabela = document.getElementById(myBtn);
+
+function addDadosEmTabela() {
+  console.log("o botao foi clicado com sucesso");
 }
+// function(event){
+// 	event.preventDefault(),
+// 	console.log('o que acontece dps')
+// }
