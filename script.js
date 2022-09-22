@@ -1,7 +1,8 @@
 const btnSalvarTabela = document.getElementById("myBtn");
+
 btnSalvarTabela.addEventListener("click", imprimirSalvar);
 btnSalvarTabela.addEventListener("click", validateForm);
-btnSalvarTabela.addEventListener("click", addDadosEmTabela);
+btnSalvarTabela.addEventListener("click", addDadosEmTabela());
 
 function imprimirSalvar() {
   // console.log("Botão salvar clicado");
